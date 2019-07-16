@@ -1,5 +1,5 @@
 def prime?(number)
-  if prime >= 2 
+  if number >= 2 
     (2..number - 1).all? do |div|
       number % div != 0
     end
