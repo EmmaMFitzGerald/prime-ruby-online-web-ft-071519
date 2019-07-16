@@ -1,11 +1,7 @@
-require "pry"
 def prime?(number)
-  if number >= 2
-    (2..number - 1).all? do |x|
-      number % x != 0
-      binding.pry
+  if prime <= 2 
+    (2..number - 1) do |div|
+      number % div != 0
     end
-  else
-    return false
   end
 end
