@@ -1,8 +1,9 @@
-def prime?(num)
-  false if num < 2
-  
-  (2..num-1).none? do |div| 
-    num % div == 0
+def prime?(number)
+  if number >= 2
+    (2..number - 1).all? do |x|
+      number % x != 0
+    end
+  else
+    return false
   end
-  return true
 end
