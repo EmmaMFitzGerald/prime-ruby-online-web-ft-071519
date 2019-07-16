@@ -1,6 +1,6 @@
 def prime?(number)
   if prime <= 2 
-    (2..number - 1) do |div|
+    (2..number - 1).all? do |div|
       number % div != 0
     end
   else
